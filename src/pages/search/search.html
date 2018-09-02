@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>SEARCH</ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="subcategory">
+
+  <ion-searchbar [(ngModel)]="queryText" (search)="searchByKeyword($event)"></ion-searchbar>
+
+  <p class="search_result" *ngIf="!Isdata">Conditions - {{conditionList.length}}</p>
+ 
+  <div *ngFor="let data of conditionList | orderby : 'approved_term': false" >
+   <ion-list no-lines *ngIf="data.approved_term!=''" (click)="openconditionsdetailpage(data)" 
+   [style.background]=data.color>
+    <button ion-item >
+      {{data.approved_term | capitalize}}
+      <ion-icon name="arrow-forward"></ion-icon>
+    </button> 
+   </ion-list>
+  </div>
+
+
+  <p class="search_result" *ngIf="!Isdata">Oils - {{oilList.length}}</p>
+  <div *ngFor="let data of oilList | orderby : 'eo': false" >
+   <ion-list no-lines *ngIf="data.eo!=''" (click)="openoilsdetailpage(data)" 
+   [style.background]=data.color>
+    <button ion-item >
+      {{data.eo | capitalize}} | {{data.scientific_name | capitalize}} 
+      <ion-icon name="arrow-forward"></ion-icon>
+    </button> 
+   </ion-list>
+  </div>
+
+
+
+
+  <ion-list no-lines *ngIf="Isdata" style="background : #f1b136">
+  <button ion-item>
+    No Data
+  </button> 
+ </ion-list>
+</ion-content>

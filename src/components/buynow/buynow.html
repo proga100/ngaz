@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar >
+  <ion-toolbar color="primary" >
+    <ion-title><!-- <ion-icon name="arrow-back" (click)="closepage()" style="float:left!important;"></ion-icon> -->  Purchase</ion-title>
+  </ion-toolbar>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="buynow" padding>
+	
+	<ion-list>
+		<ion-item >
+		    <p *ngIf="!subscriber">The Subscription is only  $2.99/month or $27/yr. 7 day trial expired. 
+		      <ng-container *ngIf="diffDays<8">after {{7-diffDays}} days</ng-container>
+		    </p>
+		    <p *ngIf="subscriber">Subscription Expires on {{transactionList.expirydate}}</p>
+	  	</ion-item>
+  	</ion-list>
+
+	<ion-list radio-group [(ngModel)]="productModal">
+		<ion-item *ngFor="let data of buynow">
+		  <ion-label>{{data.name}} - {{data.price}}</ion-label>
+		  <ion-radio value="{{data.product_id}}" (click)="checkProductId(data)"></ion-radio>
+		 <!--  <ion-checkbox color="dark" (ionChange)="checkProductId($event,data)"></ion-checkbox> -->
+		</ion-item>
+	</ion-list>
+
+
+
+	 <!-- <ion-item >
+    <p *ngIf="!subscriber">The Subscription is only  $2.99/month or $27/yr. 7 day trial expired. 
+      <ng-container *ngIf="diffDays<8">after {{7-diffDays}} days</ng-container>
+    </p>
+    <p *ngIf="subscriber">Monthly subscription ₹ 130.00 Expires on Jun 19, 2017</p>
+  </ion-item> -->
+<!-- <span>Or</span>
+<ion-list>
+	<ion-item>
+	  <ion-label>Buy all Categories - 4.99 USD/Monthly</ion-label>
+	  <ion-checkbox ></ion-checkbox>
+	</ion-item>
+</ion-list>
+<span>Or</span>
+<ion-list>
+	<ion-item>
+	  <ion-label>Buy all Categories - 29.99 USD/Yearly</ion-label>
+	  <ion-checkbox ></ion-checkbox>
+	</ion-item>
+</ion-list> -->
+
+<button ion-button icon-left large full (click)="buyNowProcess()">
+  <ion-icon name="cart" ></ion-icon>
+  BUY NOW
+</button>
+</ion-content>
+
+
+
+
+
+
+
+
+
+

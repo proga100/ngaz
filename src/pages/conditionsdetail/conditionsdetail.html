@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{title|capitalize}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="oildetails">
+
+<ng-container *ngIf="Isloading">
+
+  <ion-item *ngIf="categoryid==1||categoryid==3" class="details_heading" [innerHTML]="getList.approved_term | safe: 'html'">
+    <ion-icon name="heart-outline" item-right></ion-icon>
+  </ion-item>
+
+  <ion-item *ngIf="getList.file_path">
+    <img src="{{getList.file_path}}" >
+  </ion-item>
+
+  <ion-list *ngIf="categoryid==1||categoryid==3">
+    <ion-list-header>
+      Condition Name
+    </ion-list-header>
+      <p [innerHTML]="getList.condition_name | safe: 'html'"></p>
+  </ion-list>
+
+  <ion-list *ngIf="categoryid==2">
+    <ion-list-header>
+      Recipes
+    </ion-list-header>
+      <p [innerHTML]="getList.condition_name | safe: 'html'"></p>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      Alternative Term
+    </ion-list-header>
+    <p [innerHTML]="getList.alternate_term | safe: 'html'"></p>
+  </ion-list>
+
+  <ion-list *ngIf="categoryid==1||categoryid==3">
+    <ion-list-header>
+      Compliant Phrase
+    </ion-list-header>
+      <p [innerHTML]="getList.compliant_phrase | safe: 'html'"></p>
+  </ion-list>
+
+  <ion-list >
+    <ion-list-header>
+      Description
+    </ion-list-header>
+     <p [innerHTML]="getList.description | safe: 'html'"> </p>
+  </ion-list>
+
+
+
+  <ion-list >
+  <h3 style="margin: 0; float: left; padding: 10px;">Recipes</h3>
+    <ion-list-header>
+      Topical Recipe
+    </ion-list-header>
+      <p [innerHTML]="getList.recipe1 | safe: 'html'"></p>
+      <p [innerHTML]="getList.recipe2 | safe: 'html'"></p>
+      <p [innerHTML]="getList.recipe3 | safe: 'html'"></p>
+      <p [innerHTML]="getList.recipe4 | safe: 'html'"></p>
+      <p [innerHTML]="getList.recipe5 | safe: 'html'"></p>
+      <p [innerHTML]="getList.recipe6 | safe: 'html'"></p>
+
+  </ion-list>
+
+  <ion-list *ngIf="categoryid==1||categoryid==3">
+    <ion-list-header>
+      Suggested Oils
+    </ion-list-header>
+    <p [innerHTML]="getList.suggested_oils | safe: 'html'"> </p>
+  </ion-list>
+
+
+  <ion-list *ngIf="categoryid==1||categoryid==3">
+    <ion-list-header>
+      Disclaimer
+    </ion-list-header>
+    <p [innerHTML]="getList.disclaimer | safe: 'html'"></p>
+  </ion-list>
+
+  <ion-list style="text-align: center; margin-bottom: 10px;">
+    <button ion-button large (click)="openconditionscomments()">User Contribution</button>
+  </ion-list>
+
+</ng-container>
+
+</ion-content>

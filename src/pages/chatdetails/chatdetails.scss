@@ -1,0 +1,65 @@
+page-chatdetails {
+
+
+
+.settings .item p
+{
+	white-space: normal!important;
+	font-size:12px!important;
+}
+
+.settings .item .icon
+{
+	font-size: 40px!important;
+}
+
+.bottom_type_second,.bottom_type_first
+{
+	float:left!important;
+}
+
+.bottom_type_second
+{
+    margin: 13px 0;
+    text-align:center;
+}
+
+.bottom_type_second button
+{
+	font-size: 34px!important;
+    padding: 0!important;
+    background:transparent!important;
+}
+
+
+.card-header-md + .card-content-md, .card-md .item + .card-content-md
+{
+	    padding-top: 13px!important;
+}
+
+.question h4
+{
+	padding: 0 10px !important;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.question h4 span
+{
+	color:#000!important;
+}
+
+.chatforum ion-card
+{
+	positive:relative!important;
+}
+
+.chatforum span
+{
+    font-size: 11px;
+    float:right!important;
+    font-weight: bold;
+}
+
+}

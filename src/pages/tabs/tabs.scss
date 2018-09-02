@@ -1,0 +1,92 @@
+
+.tabbar {
+  justify-content: center;
+  padding: 15px 0!important;
+}
+
+.tabbar a
+{
+	margin:10px 1px;
+	color:#fff!important;
+}
+
+.tabbar a .icon
+{
+	color:#fff!important;
+	font-size: 50px!important;	
+}
+
+.tab-button {
+  max-width: 200px;
+}
+
+.text-md-danger {
+    color: #ff5a5a;
+    background: transparent;
+    margin: 0;
+    padding: 12px;
+}
+
+
+
+
+.bar-button-default-md:hover:not(.disable-hover), .bar-button-clear-md-default:hover:not(.disable-hover), .bar-button-md-default:hover:not(.disable-hover),.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default
+{
+	color:#1a1f22!important;
+}
+
+.tabs-md .tab-button-text 
+{
+    font-size: 1rem!important;
+}
+
+
+.toolbar-title
+{
+	color:#222729!important;
+	text-align:center!important;
+}
+
+.subcategory ion-list
+{
+	color: #fff!important;
+    margin: 0!important;
+}
+
+.subcategory ion-list button
+{
+	background-color:transparent!important;
+	color: #fff!important;
+	text-align:left!important;
+}
+
+.subcategory ion-list button ion-icon
+{
+	float:right!important;
+}
+
+
+
+.tabbar .tab-button:nth-child(1)
+{
+	background-image:url(../assets/img/wellness.png)!important;
+    background-size: 30px 30px!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+}
+
+.tabbar .tab-button:nth-child(2)
+{
+	background-image:url(../assets/img/setting.png)!important;
+    background-size: 30px 30px!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+}
+.tabbar .tab-button:nth-child(3)
+{
+	background-image:url(../assets/img/chat.png)!important;
+    background-size: 30px 30px!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+}
+

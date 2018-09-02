@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{title | capitalize}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="opensearchpage()">
+        <ion-icon ios="ios-search" md="md-search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="subcategory">
+  
+
+    <div *ngFor="let data of getList | orderby : 'approved_term': false" >
+       <div *ngIf="id==1||id==3">
+         <ion-list no-lines *ngIf="data.approved_term!=''" (click)="openconditionsdetailpage(data)" 
+         [style.background]=data.color>
+          <button ion-item >
+            {{data.approved_term | capitalize}}
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button> 
+         </ion-list>
+        </div>
+        <div *ngIf="id==4||id==5">
+         <ion-list no-lines  (click)="openconditionsdetailpage(data)" 
+         [style.background]=data.color>
+          <button ion-item >
+            {{data.alternate_term | capitalize}}
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button> 
+         </ion-list>
+        </div>
+        <div *ngIf="id==2">
+         <ion-list no-lines (click)="openconditionsdetailpage(data)" 
+         [style.background]=data.color>
+          <button ion-item >
+            {{data.alternate_term | capitalize}}
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button> 
+         </ion-list>
+        </div>
+    </div>
+
+
+  <ion-list no-lines *ngIf="Isdata" style="background : #f1b136">
+    <button ion-item>
+      No Data
+    </button> 
+ </ion-list>
+ 
+</ion-content>

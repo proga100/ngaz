@@ -1,0 +1,14 @@
+{
+  "name": "Ionic Conference",
+  "short_name": "Ionic Conf",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/img/appicon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#387ef5",
+  "theme_color": "#387ef5",
+  "play_store_key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiEdZmcBPf6rDnW+zejbkCS9k578Q9rVhbkKsmaM6t4Mx60lhtgQI9O0FMrS5teI7UolOsJayGz04DuuOoPiS9MMJdHIUgogpBpV3kIY6+L38SP4V6ss3SUYe7QTp9N5EnZwu0lSHc9fv+ms3DuUeJ4MVdX0fzx1lV8zFIjfouEgsx9MuVn7ofgDdT3j2n24ySianVE/K95zRzBbnqKVQ44KsotSWlECUVG+No925vr9qwA1hxYwUKnftEkrC32lkciA33sdP5ubru52+OWJwOX5tD++3/5bVCh8bm9fLDf5TYbl6ZudYqkqRXoHFPx5if12WPaKsa22gcB5HxQ/c2wIDAQAB"
+}

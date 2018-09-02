@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Settings</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="opensearchpage();">
+        <ion-icon ios="ios-search" md="md-search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="settings settingmenus">
+
+  <ion-list>
+    <button ion-item (click)="opencolorspage();">
+      <ion-icon name="color-palette" item-left></ion-icon>
+      Color
+    </button>
+
+  <!--   <button ion-item (click)="opensupportpage();">
+      <ion-icon name="contacts" item-left></ion-icon>
+      Support
+    </button> -->
+
+    <button ion-item (click)="logout();">
+      <ion-icon name="ios-log-out-outline" item-left></ion-icon>
+      Logout
+    </button>
+
+  </ion-list>
+
+  <ion-item >
+    <p *ngIf="!subscriber">The Subscription is only  $2.99/month or $27/yr. 7 day trial expired. 
+      <ng-container *ngIf="diffDays<8">after {{7-diffDays}} days</ng-container>
+    </p>
+    <p *ngIf="subscriber">Subscription Expires on {{transactionList.expirydate}}</p>
+  </ion-item>
+
+  <p *ngIf="!subscriber">
+    <button ion-button (click)="buynow()">Buy Now</button>
+  </p>
+
+</ion-content>

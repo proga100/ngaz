@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>New Topic</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="new_topics">
+
+<form #topicForm="ngForm" novalidate>
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>Title</ion-label>
+    <ion-input type="text" [(ngModel)]="forumData.topic" name="topic" #topic="ngModel" spellcheck="false"   autocapitalize="off" required></ion-input>
+  </ion-item>
+
+  <p ion-text [hidden]="topic.valid || submitted == false" color="danger" padding-left>
+    Title is required
+  </p>
+
+
+  <ion-item>
+    <ion-label floating>Type Here</ion-label>
+    <ion-textarea rows="5" [(ngModel)]="forumData.details" name="details" #details="ngModel" spellcheck="false"   autocapitalize="off" required></ion-textarea>
+  </ion-item>
+
+  <p ion-text [hidden]="details.valid || submitted == false" color="danger" padding-left>
+    Details is required
+  </p>
+
+  <ion-item>
+  	<button ion-button large block (click)="addForum(topicForm)">Create Topic</button>
+  </ion-item>
+
+</ion-list>
+
+</form>
+
+</ion-content>

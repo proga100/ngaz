@@ -1,0 +1,83 @@
+page-chat {
+
+.leftsidearrowicon
+{
+	font-size: 30px;
+    color: #33334c;
+    float: right;
+    line-height: 40px;
+}
+
+.sender .item
+{
+	background:#33334c!important;
+
+}
+
+.sender
+{
+	width:80%!important;
+	float:right!important;
+}
+
+.sender h2,.receiver h2
+{
+	color:#fff!important;
+}
+
+.sender p
+{
+	color:#c7c7c7!important;
+	white-space: normal;
+	font-size: 12px;
+}
+
+.receiver p
+{
+	color:#333!important;
+	white-space: normal;
+	font-size: 12px;
+}
+
+.receiver .item
+{
+	background:#ff4182!important;
+}
+
+.receiver
+{
+	width:80%!important;
+	float:left!important;
+}
+
+.sender_div
+{
+	position:relative!important;
+}
+
+.settings .item p
+{
+	white-space: normal!important;
+	font-size:12px!important;
+}
+
+.settings .item .icon
+{
+	font-size: 40px!important;
+}
+
+.chatforum ion-card
+{
+	positive:relative!important;
+}
+
+.chatforum span
+{
+
+    font-size: 11px;
+	float:right!important;
+    font-weight: bold;
+}
+
+
+}

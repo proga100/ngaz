@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.sbc.essentialoilguide"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.sbc.essentialoilguide"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.sbc.essentialoilguide"
+        },
+        "cordova-plugin-inapppurchase": {
+            "PACKAGE_NAME": "com.sbc.essentialoilguide"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.sbc.essentialoilguide"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.sbc.essentialoilguide"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.sbc.essentialoilguide"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.sbc.essentialoilguide"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "845079406032",
+            "PACKAGE_NAME": "com.sbc.essentialoilguide"
+        }
+    },
+    "dependent_plugins": {}
+}

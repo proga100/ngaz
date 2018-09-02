@@ -1,0 +1,53 @@
+
+
+<ion-header>
+  <ion-navbar >
+  <ion-toolbar color="primary">
+    <ion-title> Comments</ion-title>
+  </ion-toolbar>
+</ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="chatpage">
+
+<ion-card *ngFor="let data of contribution | async" >
+  <ion-item>
+    <h2>{{data.name}}</h2>
+    <p>{{data.created  | amTimeAgo}}</p>
+  </ion-item>
+
+  <ion-card-content>
+    <p>{{data.text}}</p>
+  </ion-card-content>
+</ion-card>
+
+
+  <ion-list no-lines *ngIf="Isdata" style="background : #f1b136">
+  <button ion-item>
+    No Contribution
+  </button> 
+ </ion-list>
+
+</ion-content>
+
+
+
+<ion-footer>
+<ion-toolbar class="bottom_type" position="bottom" color="light">
+<ion-col width-80 class="bottom_type_first"> 
+  <ion-textarea type="text" value="" placeholder="Type Comments...." [(ngModel)]="text" ></ion-textarea>
+</ion-col>
+
+<ion-col width-20 class="bottom_type_second">
+  <button ion-button color="primary" clear item-left (click)="sendMessage()">
+      <ion-icon name="send"></ion-icon>
+  </button>
+</ion-col>
+<!-- <ion-item>
+  <ion-label>Comments</ion-label>
+  <ion-textarea></ion-textarea>
+</ion-item> -->
+</ion-toolbar>	
+</ion-footer>

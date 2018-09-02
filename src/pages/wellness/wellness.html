@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Wellness</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="opensearchpage();">
+        <ion-icon ios="ios-search" md="md-search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="subcategory subcategorys">
+  <ion-list class="oils_color" (click)="actionPage('oils');">
+     <img src="assets/img/oil.png" > OILS
+  </ion-list>
+  <ion-list class="conditions_color" (click)="actionPage('conditions');">
+    <ion-icon ios="ios-flask" md="md-flask"></ion-icon> CONDITIONS
+  </ion-list>
+  <ion-list class="search_color" (click)="actionPage('search');">
+    <ion-icon ios="ios-search" md="md-search"></ion-icon> SEARCH
+  </ion-list>
+</ion-content>

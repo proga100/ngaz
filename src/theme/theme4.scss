@@ -1,0 +1,161 @@
+$tabs-background: #E37222;
+$content-background: #f6f6ff;
+$light: #53e1ff;
+$item-background: #c6c2a0;
+$tabs-background-inner : #66B9BF;
+$tabs-background-inner-active: #07889B;
+$header-background: #07889B;
+$menu-background: #07889B;
+$menu-color: #fff;
+$search-color: #EEAA7B;
+
+.theme4 {
+  h1, h2, h3, h4, h5, h6 {
+    color: $light;
+  }
+
+  ion-content {
+    background-color: $content-background;
+  }
+
+  .tabbar{
+    background: $tabs-background!important;
+  }
+
+  .tabbar a{
+    background: $tabs-background-inner;
+  }
+
+  .tabs-md .tab-button[aria-selected=true]
+  {
+    background: $tabs-background-inner-active;
+  }
+
+  .toolbar-background,.alert-head
+  {
+    background: $header-background!important;
+  }
+
+
+  .menu-inner .item
+  {
+    background: $tabs-background;
+    color: $menu-color;
+  }
+
+  .oils_color
+  {
+    background: $tabs-background-inner;
+  }
+
+  .conditions_color
+  {
+    background: $header-background;
+  }
+
+  .search_color
+  {
+    background: $search-color;
+  }
+
+  .settings
+  {
+    background:$header-background;
+  }
+
+  .settingmenus .list .item 
+  {
+    background: $tabs-background-inner-active!important;
+    color: $menu-color;
+  }
+
+  .button 
+  {
+    background-color: $tabs-background-inner-active;
+  }
+
+  .chatforum span
+  {
+    color: $tabs-background;
+  }
+
+  .toolbar-title,.toolbar button
+  {
+      color:$search-color!important;
+  }
+
+  .settings .item
+  {
+    background-color:$search-color;
+    color: $menu-color;
+  }
+
+    .settings .item .label p
+    {
+      color: $tabs-background-inner-active;
+    }
+
+    .scroll-content
+    {
+     background: $tabs-background;
+    }
+
+    .settings input
+    {
+     color: $menu-color;
+    }
+
+    .footer .toolbar-background
+    {
+      background:$header-background;
+    }
+
+    .new_topics .list .item
+    {
+      background:$search-color;
+    }
+
+    .searchbar-input
+    {
+      color: $tabs-background;
+    }
+
+    .search_result
+    {
+      background: $tabs-background-inner-active;
+      color: $search-color;
+    }
+
+    .bottom_type_second button ion-icon
+    {
+      color:$menu-color;
+    }
+
+
+    .login_page ion-item
+    {
+        background:$tabs-background-inner;
+    }
+
+    .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner {
+      border-bottom-color: $header-background;
+      box-shadow: inset 0 -1px 0 0 $header-background;
+    }
+
+    .login_page input
+    {
+      color:$menu-color;
+    }
+
+    .login_page .input-wrapper .label
+    {
+      color:$header-background;
+    }
+
+    
+
+
+}
+
+
+
