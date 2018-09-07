@@ -81,6 +81,10 @@ export class LoginPage {
   onSignup() {
     this.navCtrl.push(SignupPage);
   }
+
+  onSkip() {
+    this.navCtrl.push(TabsPage);
+  }
   
 
   

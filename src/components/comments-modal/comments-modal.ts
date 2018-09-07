@@ -25,7 +25,8 @@ export class CommentsModalComponent {
   Isdata:boolean = false;
   contribution: FirebaseListObservable<any>;
 
-  constructor( public navCtrl: NavController,public viewCtrl: ViewController,public user: UserData, public loadingCtrl: LoadingController,public navParams: NavParams,public modalCtrl: ModalController,public af: AngularFire) {
+  constructor( public navCtrl: NavController,public viewCtrl: ViewController,public user: UserData, public loadingCtrl: LoadingController,
+    public navParams: NavParams,public modalCtrl: ModalController,public af: AngularFire) {
 
     this.id=this.navParams.get('id');
     console.log('this.id===='+this.id);

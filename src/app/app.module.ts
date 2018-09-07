@@ -77,7 +77,7 @@ enableProdMode();
   ],
   imports: [
     IonicModule.forRoot(ConferenceApp,{tabsPlacement: 'top'}),
-    AngularFireModule.initializeApp(firebaseConfig),
+   AngularFireModule.initializeApp(firebaseConfig),
      IonicStorageModule.forRoot(),
     MomentModule
   ],
